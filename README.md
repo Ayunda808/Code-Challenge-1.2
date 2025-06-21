@@ -1,10 +1,10 @@
-# Code Challenge 1: Boda Fare Calculator & Guest List Manager
+# Code Challenge 1: Boda Fare Calculator 
 
-This repository contains my solutions to the **Code Challenge 1** tasks using HTML, CSS, and JavaScript.
+This repository contains my solutions to the **Code Challenge 1** 
 
 ---
 
-## 📁 Projects Included
+
 
 ### 🚕 1. Boda Fare Calculator (`bodaFareCalculator`)
 A simple fare estimator for Boda Boda rides based on distance.
@@ -16,20 +16,6 @@ A simple fare estimator for Boda Boda rides based on distance.
 
 **Run in browser:**
 - Open `bodaFareCalculator/index.html`
-
----
-
-### 📝 2. Event Guest List Manager (`Guest-List-Manager`)
-A guest list management web app.
-
-**Features:**
-- Add guest names via input field
-- View list of guests
-- Remove guests
-- Toggle RSVP status
-- Limit guest list to 10 people with alerts
-
-*More features coming soon...*
 
 ---
 
