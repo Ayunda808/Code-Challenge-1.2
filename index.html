@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Boda Fare Calculator</title>
+</head>
+<body>
+  <h1>Boda Fare Calculator</h1>
+
+  <button onclick="calculateFare()">Calculate Fare</button>
+
+  <p id="output"></p>
+
+  <script>
+    function calculateFare() {
+      const input = prompt("Unafika wapi Mkubwa? Kilometer ngapi?");
+      const distance = Number(input);
+
+      if (!isNaN(distance) && distance > 0) {
+        const baseFare = 50;
+        const chargePerKm = 15;
+        const total = baseFare + distance * chargePerKm;
+
+        document.getElementById("output").innerText = 
+          `Uko kwote? Iyo ni ${distance} km:\n` +
+          `Ukikalia Pikipiki: KES ${baseFare}\n` +
+          `Mpaka Uko: KES ${distance * chargePerKm}\n` +
+          `Total: KES ${total}\n` +
+          `Panda Pikipiki!`;
+      } else {
+        alert("Tafadhali andika nambari sahihi ya kilomita.");
+      }
+    }
+  </script>
+</body>
+</html>
