@@ -1,3 +1,4 @@
+
 # Code Challenge 1: Boda Fare Calculator 
 
 This repository contains my solutions to the **Code Challenge 1** 
@@ -30,3 +31,6 @@ A simple fare estimator for Boda Boda rides based on distance.
 cd bodaFareCalculator
 node fare.js
 # Code-Challenge-1
+=======
+# Code-Challenge-1.2
+
