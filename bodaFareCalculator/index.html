@@ -2,38 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Boda Fare & Mobile Money Estimator</title>
+  <title>Mobile Money Transaction Fee Estimator</title>
 </head>
 <body>
-  <h1>Boda Fare Calculator</h1>
-  <button onclick="calculateFare()">Calculate Fare</button>
-
   <h1>📱 Mobile Money Fee Estimator</h1>
   <button onclick="estimateTransactionFee()">Estimate Fee</button>
-
   <pre id="output"></pre>
 
   <script>
-    function calculateFare() {
-      const input = prompt("Unafika wapi Mkubwa? Kilometer ngapi?");
-      const distance = Number(input);
-
-      if (!isNaN(distance) && distance > 0) {
-        const baseFare = 50;
-        const chargePerKm = 15;
-        const total = baseFare + distance * chargePerKm;
-
-        document.getElementById("output").innerText =
-          `Uko kwote? Iyo ni ${distance} km:\n` +
-          `Ukikalia Pikipiki: KES ${baseFare}\n` +
-          `Mpaka Uko: KES ${distance * chargePerKm}\n` +
-          `Total: KES ${total}\n` +
-          `Panda Pikipiki!\n\n`;
-      } else {
-        alert("Tafadhali andika nambari sahihi ya kilomita.");
-      }
-    }
-
     function estimateTransactionFee() {
       const input = prompt("Unatuma Ngapi? (KES):");
       const amountToSend = Number(input);
@@ -58,8 +34,10 @@
                      `Total amount to be debited: KES ${total}\n\n` +
                      `Send Money Securely!`;
 
+      console.log(result);
       document.getElementById("output").textContent = result;
     }
   </script>
 </body>
 </html>
+
